@@ -1,0 +1,21 @@
+div {
+	border:1px solid #fff;
+	border-radius:5px;
+	margin:10;
+	padding:0;
+	background-color:#eee;
+	text-decoration:none;
+	color:#333;
+	font-weight:normal;
+}
+img {
+	margin:20;
+	border-radius:50%;
+}
+ul {
+	text-align:left;
+}
+body {
+	
+	font-family:Calibri;
+}
