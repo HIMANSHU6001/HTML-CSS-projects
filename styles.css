@@ -1,0 +1,77 @@
+.button {
+    border:3px solid firebrick;
+    border-radius: 2px;
+    background: linear-gradient(to right, #F93822FF 50%, #2D2926FF 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    font-size: 16px;
+    color: #ddd;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom:10px;
+    padding: 10px;
+    
+	
+}
+
+.button:hover {
+    background-position: left bottom;
+    color: #eee;
+	
+}
+
+hr {
+    width: 97%;
+    height: 2px;
+    background-color: #F93822FF;
+    border: none;
+}
+
+.wall {
+    margin: 0px;
+	position:relative;
+    height: 100%;
+    background-image: url(kobe3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html,
+body {
+    margin: 0px;
+    background-color: #eee;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+.text {
+	
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #101820FF;
+    color: #ccc;
+    font-family: 'Arial Wide', sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+	box-shadow:0 0 10px #101820FF,0 0 20px #101820FF;
+}
+
+.poem {
+    margin: 40px;
+}
+
+a {
+    text-decoration: none;
+}
