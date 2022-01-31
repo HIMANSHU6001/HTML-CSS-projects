@@ -1,0 +1,371 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    align-content: center;
+    background: url('Image.jpg');
+    min-height: 400px;
+    min-width: 1000px;
+    background-size: 1255px 620px;
+    background-repeat: no-repeat;
+}
+
+.head {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.head .inner div {
+    font-family: 'Poppins';
+    padding: 10px;
+    display: inline-block;
+}
+
+.head .inner a {
+    color: aliceblue;
+}
+
+.head .inner div:nth-child(1) a {
+    font-family: Times, serif;
+}
+
+.head .inner div:nth-child(2) {
+    padding-left: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+.head .inner div:nth-child(2) a {
+    padding: 10px;
+}
+
+.head .inner div:nth-child(3) {
+    float: right;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(241, 84, 84);
+    border-radius: 5px;
+}
+
+.head .face {
+    margin-top: 100px;
+    color: aliceblue;
+}
+
+.head .face div:nth-child(1) {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 0;
+}
+
+.head .face div:nth-child(2) {
+    font-family: 'Poppins';
+    padding: 0;
+    text-align: left;
+    color: #eee;
+    font-size: 12px;
+}
+
+.head .face div:nth-child(3) {
+    margin-top: 50px;
+    font-size: 12px;
+    font-family: 'Poppins';
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(241, 84, 84);
+    border-radius: 5px;
+}
+
+.Page2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.Page2 .heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.Page2 .text {
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #666;
+}
+
+.Page2 .imgs .cont {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 290px;
+    height: 400px;
+    border: none;
+    box-shadow: 0 0 5px #aaa;
+    border-radius: 10px;
+}
+
+.Page2 .imgs div:nth-child(1) {
+    background-image: url(Turkey.jpg);
+    background-size: 290px 400px;
+    background-repeat: no-repeat;
+}
+
+.Page2 .imgs div:nth-child(2) {
+    background-image: url(Kuala.jpg);
+    background-size: 290px 700px;
+    background-repeat: no-repeat;
+}
+
+.Page2 .imgs div:nth-child(3) {
+    background-image: url(Seoul.jpg);
+    background-size: 290px 500px;
+    background-repeat: no-repeat;
+}
+
+.Page2 .imgs .cont p {
+    font-family: "Poppins";
+    color: #666;
+    background-color: white;
+    font-size: 12px;
+    padding: 50px 0px 50px 0px;
+    margin-top: 260px;
+}
+
+.Page2 .imgs .cont p span {
+    color: initial;
+    font-family: initial;
+    font-size: 20px;
+}
+
+#scrollmenu {
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    overflow: auto;
+    white-space: nowrap;
+    width: 90%;
+}
+
+#scrollmenu a {
+    text-align: center;
+}
+
+.conti {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 20px solid transparent;
+    height: 300px;
+    width: 200px;
+}
+
+.conti div {
+    height: 125px;
+    width: 200px;
+}
+
+.place {
+    height: 125px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+div::-webkit-scrollbar {
+    margin-top: 10px;
+    height: 10px;
+}
+
+div::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ccc;
+    box-shadow: inset 0 0 1px #bbb;
+}
+
+div::-webkit-scrollbar-thumb {
+    background: rgb(255, 166, 0);
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #666;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 123, 0);
+}
+
+.conti {
+    text-align: left;
+    line-height: 15px;
+}
+
+.conti p:nth-child(2) {
+    font-size: 18px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.conti p:nth-child(3) {
+    font-size: 16px;
+    font-family: 'Poppins';
+    color: #666;
+    letter-spacing: -1px;
+}
+
+.conti p:nth-child(4) {
+    text-align: left;
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 12px;
+}
+
+.conti p:nth-child(5) {
+    text-align: left;
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.conti span {
+    display: inline;
+    margin-left: 20px;
+    color: black;
+    margin-right: 50px;
+}
+
+.conti span:nth-child(1) {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.icn {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.halfdiv1,
+.halfdiv2 {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    width: 450px;
+    padding: 10px;
+}
+
+.halfdiv1 .contai img {
+    height: 300px;
+    width: 450px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.contai .text {
+    font-size: 14px;
+}
+
+.contai p {
+    display: block;
+    text-align: left;
+}
+
+.contai p:nth-child(1) {
+    font-size: 16px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contai p:nth-child(2) {
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 12px;
+}
+
+.contai p:nth-child(3) {
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 12px;
+}
+
+.contai p:nth-child(4) {
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 14px;
+}
+
+.contai span:nth-child(1) {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: black;
+}
+
+.foot {
+    margin-top: 100px;
+    background-color: rgb(245, 255, 253);
+}
+
+.foot div {
+    display: inline-block;
+    font-family: "Poppins";
+}
+
+.foot div:nth-child(1) {
+    margin-left: 100px;
+    padding: 30px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.foot div:nth-child(1) .icn {
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.foot div:nth-child(2),
+.foot div:nth-child(3) {
+    padding: 30px;
+    font-size: 12px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.area {
+    border: none;
+    height: 40px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+}
+
+.foot div {
+    margin-right: 20px;
+}
+
+.foot div:nth-child(4) {
+    padding: 20px;
+    margin-top: 0px;
+    width: 300px
+}
+
+.foot div:nth-child(4) p:nth-child(3) {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(210, 63, 63);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
