@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="assets/hr_script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> HackerRank </title>
+  <link rel="stylesheet" href="assets/index-6699096d.css">
+</head>
+
+<body class="my-10">
+    <div class="flex flex-col m-auto items-center justify-center">
+        <img src="assets/hr_logo-1f58c75b.svg" class=" w-64 my-6 lg:mt-20">
+        <p class="font-bold text-2xl text-gray-700">For Developers</p>
+        <p>Practice coding, prepare for interviews, and get hired.</p>
+    </div>
+    <div
+        class="card flex flex-col bg-white w-[27rem] m-auto my-6 pl-5 pb-5 rounded-sm  shadow-[rgba(0,0,0,0.1)_0px_5px_12px_8px] ">
+        <div class="flex">
+            <div class="font-bold text-center p-4 w-1/2">Sign up</div>
+            <a href="login.html" class="font-bold text-center p-4 w-1/2 bg-gray-100"><div>Log In</div></a>
+        </div>
+
+
+        <!--Name input-->
+        <input id="name" onblur="inp_name()" class="border border-1 my-2 h-9 rounded-sm mr-5 pl-12 hover:border-black"
+            style="background: url(assets/person-6ad42266.svg) no-repeat left 10px center; background-size: 20px 20px;" type="text"
+            placeholder="First & Last name">
+
+        <span id="name_error" class="text-[13px] -mt-2 text-red-600 flex invisible h-0"><img src="assets/error_logo-942a0241.svg"
+                class="w-4 m-1">Enter first name and last name.
+        </span>
+
+        <!--Email input-->
+        <input id="email" onblur="inp_email()"
+            class="border border-1 my-2 h-9 rounded-sm mr-5 pl-12 hover:border-black"
+            style="background: url(assets/mail-044bf1ba.svg) no-repeat left 10px center; background-size: 20px 20px;" type="text"
+            placeholder="Email">
+
+        <span id="email_error" class="text-[13px] -mt-2 text-red-600 invisible h-0 flex"><img src="assets/error_logo-942a0241.svg"
+                class="w-4 m-1">Invalid email address.
+        </span>
+
+
+        <!--password input-->
+        <input id="passwd" onblur="inp_passwd()"
+            class="border border-1 my-2 h-9 rounded-sm mr-5 pl-12 hover:border-black"
+            style="background: url(assets/lock-f3f9610d.svg) no-repeat left 10px center; background-size: 20px 20px;" type="password"
+            placeholder="Your password">
+
+        <span id="passwd_error" class="text-[13px] -mt-2 text-red-600 invisible h-0 flex"><img src="assets/error_logo-942a0241.svg"
+                class="w-4 m-1">Password should be at least 6 characters long.
+        </span>
+
+        <span class="text-[13px] my-2"><input type="checkbox" class="mr-1" required> I agree to HackerRank's <span
+                class="text-blue-500 cursor-pointer hover:underline">Termes of
+                service</span> and
+            <span class="text-blue-500 cursor-pointer hover:underline">Privacy Policy</span>
+        </span>
+        <button
+            class="bg-green-700 text-white font-bold w-44 py-[10px] px-0 rounded-[4px] mb-5 ml-auto mr-5 hover:bg-green-800">Create
+            An Account</button>
+        <div class="flex mt-2 -ml-5 divide-slate-400">
+            <span></span>
+            <hr class="w-[120px] mt-3 m-auto "><span class="text-gray-400"> or connect with </span>
+            <hr class="w-[120px] mt-3 m-auto ">
+        </div>
+        <div class="grid grid-cols-4 gap-2 justify-center mr-5 my-3">
+            <div class="border-r-2 pr-8"><img src="assets/fb_logo-ba603356.svg" class="w-10 m-auto cursor-pointer"></div>
+            <div class="border-r-2 px-4"><img src="assets/ggl_logo-e7e21ee6.svg" class="w-10 m-auto cursor-pointer"></div>
+            <div><img src="assets/in_logo-23d7bfa2.svg" class="w-10 m-auto cursor-pointer"></div>
+            <div class="border-l-2 pl-6"><img src="assets/gh_logo-a55d70f8.svg" class="w-10 m-auto cursor-pointer"></div>
+        </div>
+    </div>
+    <div class="h-40"></div>
+    <div id="info_text" class="fixed bottom-0 top-auto lg:top-0 lg:bottom-auto flex bg-green-600 text-white w-full">
+        <span class=" font-bold text-[12px] ml-5 py-3 mr-5">We use cookies to ensure you have the best browsing
+            experience on our website. Please read our cookie policy for more information about how we use
+            cookies.</span> <button onclick="cookies_ok()"
+            class="bg-white text-green-600 font-bold h-8 w-16 rounded-md px-[20px] ml-auto my-auto mr-10">OK</button>
+    </div>
+</body>
+</html>
