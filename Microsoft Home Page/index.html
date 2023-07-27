@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="assets/javascript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Microsoft - Cloud, Computers, Apps &amp; Gaming</title>
+  <link rel="stylesheet" href="assets/index-604acfb6.css">
+</head>
+
+<body class="max-w-[1800px] justify-center overflow-x-hidden">
+    <div class="navbar h-[52px] flex justify-between items-center min-[960px]:mx-16 min-[860px]:mx-5">
+        <div class="justify-center flex items-center space-x-5 min-[860px]:hidden">
+            <button onclick="drop_phone()"
+                class="hamburger p-3 m-1 cursor-pointer border border-1 border-white border-dashed focus:border-black">
+                <div id="ham" class="flex-col space-y-1 flex">
+                    <span class="w-5 bg-black h-0.5"></span>
+                    <span class="w-5 bg-black h-0.5"></span>
+                    <span class="w-5 bg-black h-0.5"></span>
+                </div>
+                <img id="cross" class="w-4 hidden" src="assets/cancle-9cafa6da.svg">
+            </button>
+            <div id="phone-dropdown"
+                class="cursor-pointer text-sm z-20 flex-col absolute top-[52px] right-0 bg-[#f2f2f2] border-b-2 border-black w-full align-middle hidden">
+                <div></div>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">Microsoft
+                    365</button>
+                <hr>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">Teams</button>
+                <hr>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">Windows</button>
+                <hr>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">Surface</button>
+                <hr>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox</button>
+                <hr>
+                <!-- #### SUPPORT -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_support()">
+                    Support <img id="support-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="support-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="support-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Windows
+                        Apps</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">AI</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">OneDrive</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Outlook</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Skype</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">OneNote</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Microsoft
+                        Teams</button>
+                </div>
+                <!-- SUPPORT #### -->
+
+
+                <hr>
+                <!--#### PC  -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_pc()">
+                    PCs & Devices<img id="pc-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="pc-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="pc-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Shop
+                        Xbox</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Accessories</button>
+                </div>
+                <!-- PC #### -->
+
+
+                <hr>
+                <!--#### ENTERTAINMENT  -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_ent()">
+                    Entertainment<img id="ent-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="ent-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="ent-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox Game
+                        Pass
+                        Ultimate</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox Live
+                        Gold</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox
+                        games</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">PC
+                        games</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Windows
+                        digital
+                        games</button>
+                </div>
+                <!-- ENTERTAINMENT #### -->
+
+
+                <hr>
+                <!--#### BUSINESS -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_bus()">
+                    Business<img id="bus-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="bus-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="bus-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox Game
+                        Pass
+                        Ultimate</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox Live
+                        Gold</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Xbox
+                        games</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">PC
+                        games</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Windows
+                        digital
+                        games</button>
+                </div>
+                <!-- BUSINESS #### -->
+
+
+                <hr>
+                <!--#### DEVELOPER -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_dev()">
+                    Developer & IT<img id="dev-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="dev-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="dev-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Development
+                        Center</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Documentation</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Microsoft
+                        Learn</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Microsoft
+                        Tech
+                        Community</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Azure
+                        Marketplace</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">AppSource</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Visual
+                        Studio</button>
+                </div>
+                <!-- DEVELOPER #### -->
+
+
+                <hr>
+                <!--#### OTHER -->
+                <button class="p-4 flex focus:border focus:border-1 border-black focus:border-dashed"
+                    onclick="drop_oth()">
+                    Other<img id="oth-down" class="h-3 my-auto ml-auto" src="assets/down-bc56e366.svg"> <img id="oth-up"
+                        class="h-3 my-auto ml-auto hidden" src="assets/up-0f10a6f5.svg"></button>
+                <div id="oth-dropdown" class="boreder-2 border-red-700 text-sm z-20 flex-col bg-[#f2f2f2] hidden">
+                    <hr>
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Free
+                        downloads & Security</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Education</button>
+                    <hr class="w-[95%] m-auto">
+                    <button class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Gift
+                        Cards</button>
+                    <hr class="w-[95%] m-auto">
+                    <button
+                        class="p-4 ml-5 focus:border focus:border-1 border-black focus:border-dashed flex">Licensing</button>
+                </div>
+                <!-- OTHER #### -->
+
+
+                <hr>
+                <button class="p-4 focus:border focus:border-1 border-black focus:border-dashed flex">View
+                    Sitemap</button>
+                <hr>
+
+            </div>
+
+            <img class="search w-4 cursor-pointer" src="assets/search-81227ee0.svg">
+        </div>
+        <div class="microsoft flex">
+            <img class="h-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAAAuCAYAAABK69fpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTAwQkM2Mzk4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTAwQkM2Mzg4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMkM5MzFBNDcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMkM5MzFBNTcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgQJy/MAAAxESURBVHja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">
+            <div
+                class="feats text-sm mt-1 hidden min-[860px]:block min-[860px]:mx-10 min-[860px]:space-x-4 text-[13px]">
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Microsoft
+                    365</span>
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Teams</span>
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Windows</span>
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Surface</span>
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Xbox</span>
+                <span class="hover:underline underline-offset-4 decoration-2 cursor-pointer text-xs">Support</span>
+            </div>
+        </div>
+
+        <div class="cart-user flex space-x-4 items-center justify-center ">
+            <button onclick="drop_all()" id="all"
+                class=" text-[13px] hidden min-[860px]:flex hover:underline  focus:border focus:border-1 border-black focus:border-dashed focus:no-underline underline-offset-4 cursor-pointer decoration-2 items-center p-4 ">
+                All Microsoft <div id="all_arrow"><img class="h-[10px] m-2 cursor-pointer ml-1" src="assets/down-bc56e366.svg"></div>
+            </button>
+
+            <div id="all-dropdown" class="z-10 right-0 hidden absolute top-[52px] bg-[#f2f2f2]">
+                <div class="grid grid-cols-6">
+                    <div>
+                        <span class="header"> Software </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Windows
+                                Apps</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">AI</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">One
+                                Drive</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Outlook</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Skype</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">OneNote</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Teams</button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="header"> PCs & Devices </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Shop
+                                Xbox</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Accessories</button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="header"> Entertainment </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Xbox Game
+                                Pass Ultimate</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Xbox Live
+                                Gold</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Xbox
+                                Games</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">PC
+                                Games</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Windows
+                                digital games</button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="header"> Business </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Cloud</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Security</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Azure</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Dynamic
+                                365</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                365 for business</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Industry</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Power Platform</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Window
+                                365</button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="header"> Developer & IT </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Developer
+                                Center</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Documentation</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Learn</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                                Tech Community</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Azure
+                                Marketplace</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">App
+                                Source</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Visual
+                                Studio</button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="header"> Other </span>
+                        <div class="flex flex-col">
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Free
+                                downloads & security</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Education</button>
+                            <button class="itm focus:border focus:border-1 border-black focus:border-dashed">Gift
+                                Cards</button>
+                            <button
+                                class="itm focus:border focus:border-1 border-black focus:border-dashed">Licensing</button>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="border-b-2 cursor-pointer border-black bg-[#e6e6e6] py-2 text-xs text-center items-center hover:underline underline-offset-2">
+                    VIEW SITEMAP <img class="h-3 inline mb-1" src="assets/right-arrow-6c8fb940.svg"></div>
+            </div>
+
+            <div class="flex items-center"><span
+                    class="text-[13px] pr-2 hidden min-[1400px]:block hover:underline underline-offset-4 cursor-pointer decoration-2">Search</span><img
+                    class="hidden min-[860px]:block search w-5 h-4 cursor-pointer" src="assets/search-81227ee0.svg"></div>
+            <div class="flex items-center"><span
+                    class="text-[13px] pr-2 hidden min-[1400px]:block hover:underline underline-offset-4 cursor-pointer decoration-2">Cart</span><img
+                    class=" h-5 w-5 cursor-pointer" src="assets/cart-9d50cca7.svg"></div>
+            <div class="flex items-center"><span
+                    class="text-[13px] pr-2 hidden min-[1400px]:block hover:underline underline-offset-4 cursor-pointer decoration-2">Sign
+                    in</span><img class=" h-7 w-7 cursor-pointer" src="assets/user-bb8089ab.svg"></div>
+        </div>
+
+    </div>
+    <hr>
+    <div>
+        <div id="slide_1" class="slider-1 m-1 ">
+            <div class="min-[1060px]:hidden">
+                <div><img class="relative -z-10 w-full " src="assets/slide-1-0ac92430.webp"></div>
+                <div class="line bg-white shadow-md p-7 min-[800px]:-mt-16 min-[800px]:mx-3">
+                    <h1 class="text-2xl font-semibold mb-5">Microsoft 365</h1>
+                    <span>Turn your ideas into reality, stay safer online and off, and focus on what matters most with
+                        Microsoft 365 apps</span>
+                    <div class="min-[400px]:flex">
+                        <button class="order block mt-5 bg-[#0067b8] text-white px-3 py-2 font-semibold rounded-sm">For
+                            one
+                            person</button>
+                        <button class="order mt-3 min-[400px]:ml-10 text-[#0067b8] font-semibold">For upto six people
+                            ></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden relative min-[1060px]:block border border-1 border-white w-full"
+                style="background-image: url(assets/image-8b86e1cd.webp); background-size: 100% 100%;">
+                <div class=" m-32 w-[350px]">
+                    <h1 class="text-4xl font-semibold mb-5">Microsoft 365</h1>
+                    <span>Turn your ideas into reality, stay safer online and off, and focus on what matters most with
+                        Microsoft 365 apps</span>
+                    <div class="flex mt-4">
+                        <button class="order bg-[#0067b8] text-white px-3 py-2 font-semibold rounded-sm">For one
+                            person</button>
+                        <button class="order ml-10 font-semibold">For upto six people></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide_2" class="slider-2 m-1 absolute top-[52px] w-full">
+            <div class="min-[1060px]:hidden">
+                <div><img class="relative -z-10 w-full" src="assets/slide-2-a36c52d2.webp"></div>
+                <div
+                    class="line bg-white shadow-md p-7 min-[800px]:-mt-16 pb-[70px] min-[400px]:pb-12 min-[863px]:pb-6 min-[800px]:mx-3">
+                    <h1 class="text-2xl font-semibold mb-5">Surface Pro 9</h1>
+                    <span>Tablet versatility and laptop power — all in one ultra-portable device</span>
+                    <button class="order block mt-5 bg-[#0067b8] text-white px-3 py-2 font-semibold  rounded-sm">Learn
+                        More</button>
+                </div>
+            </div>
+            <div class="hidden bg-[#f2f2f2] min-[1060px]:flex w-full h-[445px] max-w-[1800px]">
+                <img class="w-2/3 min-[1300px]:hidden" src="assets/slide-2-a36c52d2.webp">
+                <img class="w-3/5  hidden min-[1300px]:block" src="assets/croped-large-2-4dcb857f.jpg">
+                <div class=" my-40  mr-20 w-[350px] ml-auto">
+                    <h1 class="text-3xl font-semibold mb-5">Surface Pro 9</h1>
+                    <span>Tablet versatility and laptop power — all in one ultra-portable device</span>
+
+                    <button class="order block bg-[#0067b8] text-white px-3 py-2 my-5 font-semibold rounded-sm">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls flex justify-center my-10 space-x-5">
+        <div></div>
+        <img id="pause" onclick='changePause();' class="h-5 w-5 cursor-pointer" src="assets/pause-63c8a3d8.svg">
+        <img id="play" class="h-5 w-5 hidden cursor-pointer" onclick='changePlay();' src="assets/play-98dd58e3.svg">
+        <img onclick="goLeft()" class="h-5 w-10 cursor-pointer duration-300  px-2 hover:-translate-x-3"
+            src="assets/left-arrow-d5c8ff76.svg">
+        <img id="dot1" class="h-5 w-5 cursor-pointer" src="assets/active-dot-becc684a.svg">
+        <img id="dot2" class="h-5 w-5 cursor-pointer" src="assets/dot-5de2c435.svg">
+        <img onclick="goRight()" class="h-5 w-10 cursor-pointer duration-300  px-2 hover:translate-x-3"
+            src="assets/right-arrow-6c8fb940.svg">
+    </div>
+
+
+    <div class="feats flex flex-wrap justify-center items-center mx-20">
+        <div class=" inline-block m-5 cursor-pointer hover:underline underline-offset-2"><img
+                class="h-8 w-8 mx-auto mb-2" src="data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAABQCQCdASooACgAPhkKhEGhBHGABABhLSRYBEgNMCyBIgHUAAOMZUK/xmz1f4zZCb+JOozfirXzKk2Z/TI3PUClFYMvBybmPVRQIUep53aFLPKqAAD+//6gvzoOc6aD0PAQ2cHo5+an1HHSzzZ6LZwSzsmiU/D/u377PyKrCos/RvW6nEsmeW11TbtDlFI+j5fee5KHs/7xmAXsy0J3Rx73/vUZ/fnPYhOsvZfYUccUUC7sf+/VfvtLsQso7k5NBrKt9WwI8jPwz6r4aP/7hOL8vB34bFe5GR/9fq8Ji9fvKW/69g8KHvdvVk/8Sd95x6uNZSc6Lf3yim7WnXCMWN3wRsXhWC22MIvnWTV/OF6c+4xX8c5qedUK4lLeanGPqPsDxFYgVxHlG5H/BKv4zCf7osQLMFUHjvHjCMjHlCZ/KlgAAAA=">Choose your Microsoft 365</div>
+        <div class=" inline-block m-5 cursor-pointer hover:underline underline-offset-2"><img
+                class="h-8 w-8 mx-auto mb-2" src="data:image/webp;base64,UklGRpIBAABXRUJQVlA4IIYBAAAQCQCdASooACgAPkkejUQioaGXHAcwKASEtIAJ407z1bNCAcnjoBvQCN9cfScyuAGTtvQMkpX/ay5iuSJLYTJAPT6tD0ZfLxsebHWctzDcPAAA/v92NZX33/vebRfHUzuqPFKTkE3b96T//xXZ6t9roysPlu1jUVg/mi6SqmmTgWm3J+7JYWvgrPPMukj+aCfaG9hBkv95/C3di0VdQcitc+V1AUo60NjGxi56smw+oJj9IxCz2++95JcsJwzgwRprO7bK0MAM/AZ9DIufj0LMSOKkBrwt/nQwJXyT7Yasfid5rCYHaaol1Deff05/uCs/9UO985FetcKYJ9WykLOtAQgqv+KnlG882f/P9Las31jeAufUfTX251o/E3Yj65Z31gIZ4s+PSV3PPbPXtdFQq6YXKPQfARuGVcC4D6lQwXt4GRXcv7s6lH/n2yWGeGa5/9nvpFf0moPV709gA6sPYNHbeNULD8455Z8cqNIf/JVZPLzxBn7D9P3uBE02Trzx74nAAAA=">Buy Xbox games and console</div>
+        <div class=" inline-block m-5 cursor-pointer hover:underline underline-offset-2"><img
+                class="h-8 w-8 mx-auto mb-2" src="data:image/webp;base64,UklGRmIBAABXRUJQVlA4IFYBAAAQCQCdASooACgAPhUGgkEhBqgEAFEtIAJxfyR58T9R/Hb8btQb/ZsaA0Tf8o9d3/ZvSaxY/RC/yBDv4GdjDm0BdgeodbZbSWtOlItORODD3fAA/v/+zgW3/Cgt/fikrMvp/8ivxgzgugHRFYYbWnt+nnIzZsMJdcjr1UggotS4rW3vmPGBZgEyR2bG/+hNsrhPR//nrTM1Hq5B8LNgsZsTaRpyNwZ5MdpmuOf5aTwwBS9WLzmbBVhDkO7mtYYHFVZyBdy1CY/+qYv9w/TbFgdgsZb/GduyVrCOo7AwX+Voqpz1bVuSJz9euDd//sxnzJ/3+OWX5W1+nNSR77EbYJflXvppn5tQPyAGcBXr99C/2Vf3asbt4eDIGo9kTsx9l0j2I78wwc7px/J/53+QYjvp6bjcfAf9Hmw+3FS9pj5nyf9e8nGrjAQ6RzP/4PI2sAw+bk4AAAA=">Explore Surface devices</div>
+        <div class=" inline-block m-5 cursor-pointer hover:underline underline-offset-2"><img
+                class="h-8 w-8 mx-auto mb-2" src="data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAABQCQCdASooACgAPhkKhEGhBHGABABhLSRYBEgNMCyBIgHUAAOMZUK/xmz1f4zZCb+JOozfirXzKk2Z/TI3PUClFYMvBybmPVRQIUep53aFLPKqAAD+//6gvzoOc6aD0PAQ2cHo5+an1HHSzzZ6LZwSzsmiU/D/u377PyKrCos/RvW6nEsmeW11TbtDlFI+j5fee5KHs/7xmAXsy0J3Rx73/vUZ/fnPYhOsvZfYUccUUC7sf+/VfvtLsQso7k5NBrKt9WwI8jPwz6r4aP/7hOL8vB34bFe5GR/9fq8Ji9fvKW/69g8KHvdvVk/8Sd95x6uNZSc6Lf3yim7WnXCMWN3wRsXhWC22MIvnWTV/OF6c+4xX8c5qedUK4lLeanGPqPsDxFYgVxHlG5H/BKv4zCf7osQLMFUHjvHjCMjHlCZ/KlgAAAA=">Get Windows 11</div>
+    </div>
+
+    <div class="news flex flex-wrap justify-center space-y-20">
+        <div></div>
+        <div class="m-2 min-[540px]:w-[40%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/laptop-c1e148b7.webp">
+            <p class="font-semibold text-xl my-3"> Surface
+                Laptop 5</p>
+            <p> Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.
+            </p><span class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Learn More <div
+                    class="absolute w-24 h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[40%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/gamepad-b4479d0c.jpg">
+            <p class="font-semibold text-xl my-3">Xbox Series S</p>
+            <p> Next-gen performance in the smallest Xbox ever. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Shop Xbox Series S <div
+                    class="absolute w-[150px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[40%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/bing-440a05df.webp">
+            <p class="font-semibold text-xl my-3">Announcing the
+                next wave of AI innovation</p>
+            <p> The new Microsoft Bing and Edge will soon feature more visual search
+                responses, chat history, and persistent chat within Edge. We’re also adding actions to help people
+                complete tasks. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Learn more about it<div
+                    class="absolute w-[155px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[40%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/halo-47a5e61e.webp">
+            <p class="font-semibold text-xl my-3">Xbox Game Pass
+                Ultimate </p>
+            <p> Xbox Live Gold and hundreds of high-quality console and PC games. Play together with friends
+                and discover your next favourite game. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Join Nows<div
+                    class="absolute w-[90px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+    </div>
+
+    <div id="slide_3" class=" mt-20 ">
+        <div class="min-[1060px]:hidden">
+            <div><img class="mx-auto w-[98%] " src="assets/slide_3-048da756.webp"></div>
+            <div class="line bg-white shadow-md p-7 min-[800px]:-mt-16 min-[800px]:mx-5 relative">
+                <h1 class="text-2xl font-semibold mb-5">Designed for life today – and tomorrow</h1>
+                <span>The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you
+                    closer to everything you love.</span>
+                <div class="min-[400px]:flex">
+                    <button class="order block mt-5 bg-[#0067b8] text-white px-3 py-2 font-semibold rounded-sm">See if
+                        your PC is ready</button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden relative min-[1060px]:block border border-1 border-white -z-10 mx-auto w-[90%]"
+            style="background-image: url(assets/slide_3_big-ef80ef6e.webp); background-size: 100% 100%;">
+            <div class="z-10 m-28 w-[350px]">
+                <h1 class="text-4xl font-semibold mb-5 text-white">Designed for life today – and tomorrow</h1>
+                <span class="text-white">The next-generation of games. Your goals. Friends and family. Windows 11 was
+                    made to bring you closer to everything you love.</span>
+                <div class="flex mt-4">
+                    <button class="order bg-[#0067b8] text-white px-3 py-2 font-semibold rounded-sm">See if your PC is
+                        ready</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="business flex flex-wrap justify-center space-y-20">
+        <div class=" mt-28 -mb-10 text-2xl font-semibold w-[90%]">For Business</div>
+        <div class="m-2 min-[540px]:w-[47%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/business-surface-67bb16ed.webp">
+            <p class="font-semibold text-xl my-3">Surface for Business</p>
+            <p> No matter what you do, there’s a Surface to help you do it.
+            </p><span class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Learn More <div
+                    class="absolute w-24 h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[47%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/business 365-30055d38.webp">
+            <p class="font-semibold text-xl my-3">Try Microsoft 365 for free</p>
+            <p> Next-gen performance in the smallest Xbox ever. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Shop Xbox Series S <div
+                    class="absolute w-[150px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[47%] min-[1010px]:w-[20%]"><img class="w-[100%] " src="assets/business-cloud-dcd2828e.webp">
+            <p class="font-semibold text-xl my-3">Welcome to your Windows 365 Cloud PC</p>
+            <p> The new Microsoft Bing and Edge will soon feature more visual search
+                responses, chat history, and persistent chat within Edge. We’re also adding actions to help people
+                complete tasks. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Learn more about it<div
+                    class="absolute w-[155px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+        <div class="m-2 min-[540px]:w-[47%] min-[1010px]:w-[23%]"><img class="w-[100%] " src="assets/business-11-10d64395.jpg">
+            <p class="font-semibold text-xl my-3">Windows 11 for Business</p>
+            <p> Xbox Live Gold and hundreds of high-quality console and PC games. Play together with friends
+                and discover your next favourite game. </p><span
+                class="relative mt-10 flex text-[#0067b8] hover:underline underline-offset-1">Join Nows<div
+                    class="absolute w-[90px] h-8 py-2 duration-300 hover:translate-x-2"><img
+                        class="float-right h-3 cursor-pointer " src="assets/right-arrow-6c8fb940.svg"></div></span>
+        </div>
+    </div>
+
+    <div class="follow flex ml-20 mt-24">
+        <span class="mr-5">Follow Microsoft</span>
+        <img class="w-7 mr-5 cursor-pointer" src="data:image/webp;base64,UklGRnwBAABXRUJQVlA4IHABAACwCwCdASpAAEAAAAAAJaQBTAfcucB+DtiB/FPwr/DPSLfgx+wH9mnwD8cvUA/mfEA/l/4q+yh+c/i5/M/NJ/DP4Gv5p+PvGAfqAmFAPtCmefQL8SLpIh8VnGALbZ2MZx6cwskx4AAA/v/e3TZ9/zcK+4bfVDXvIO32/LN/8nICLm//3kRjCImCBlHI9y5PsADXbqDaBUCNOf//zouyt27vtMskq/6+ksYGrH4MVW2fURcOcrVvkVwaX//2mPqml5T9dPO9FjIl55V/1MDQZgRPAfzxaMkC1g2mHoS+XYf+6LU9z9RDHAY5B6HAjf6JuSUj/v8F0c1cIeNsyXq/zvEGNlOwTMqA+e4RqOR1mfabfRmJkN//9mk8xLUh1XqNNibYd69y7//lSXVH41bhMb5axVq7c4zVM4zyriI3fUk2+znicZcs0vKF+PjZg6T//52XZYdYS5ehMyf//tCPneYf/tBe1K13DaqQubzub8IAAA==">
+        <img class="w-7 mr-5 cursor-pointer" src="data:image/webp;base64,UklGRhYCAABXRUJQVlA4IAoCAACwDQCdASpAAEAAPkkei0QioaEa+u5kKASEtIALa3Yd/UuSz9Tcma+EzhXwAZxl8y/zPGBpAphPi7/Hv8L7Av8j/p3+56+/ok/pmhAB5BvSw0nhA1vdy0JvnQYxPzUWIQPMOxmygoxnjVi5sVlOxzrfPRBgBd8AAP79wXcUI7u5Kc7co135F8wmb9bV0hJSO/FC1jM5jdGpRxnZAwcPB/3dWgFp7fmGxeN+EdkyA/Ysn68+8pZzMM5/4mO33Jpyl8D5pR6G0/kSoc9Xb/+QqeE/ECoazBs14HKH6eiW7Of4c2HoMVvpO2ZmFWYq3HKu4vwIUkM7ezd/DAcij+6HJfB+P1knbDUcw70lF+kIQmgjQIWJ24Bam7lJhnkcN9yHFiZ+AlZ6QYXlEeLHEe637Hk/7uGd+X85wBa9zswf2iJ2L3FgvHoj/RRkomTXSiD59sO7HopVtNm2v7Wo8bOecShb9TSuubNLCHHQ/FkM3VH4qJ00GaYthQT/ckuBsYbChMIe/RCxvgxKK0X/ojbLDhftL2IcA3Yr+X7tpnSZo0hj9wf+uQv4NOevJxsDYxyNvr3vTZh/jBvHTFvsYIFqzPDza+KayUoij9+hIcro1H68q+OrYcUOH2d5BOrQD+ZXjhPfH1vfPeyShPoPtk/c3f0n5Na+Wvq6OeXU5ka2373vWP2cw8PRcLSzAAA=">
+        <img class="w-7 mr-5 cursor-pointer" src="data:image/webp;base64,UklGRpoCAABXRUJQVlA4II4CAACwEQCdASpAAEAAPiEOhkKhhIMBbQYAgS0gCsz+69RP9u/HO1AfSn8V+TmmAfxH+s5Jr88/yf5b6kr+TPM0Rq/6T7Zvox/gv+p5Tfyb/G/8P3Bf4t/RP8z+YXGQfpuT8oUU01Q6DucmbkR6xymb0++s8KqYUlB2EUYmo5ELSF5xmtAXuqp5Ar5Grfsqhi915UJ2EqaauAAA/v//pQy/9j/Fh+RaO6MwLY7gKxd4e7/cCHqSXY5aQceF6HgufyShCE7sdNFFn84GbPRX+lG3MtaieAZaPYFQxoFNKjncdSjwfQETO3UlY95CVZiZa48uL/2GnEbaz/jKf85E0mRfefXp/VvWXy5m/yURkdGFXP8Xsngxs22PTTSulU58C/P5WdW/VpsDAUPeQRhG/eVdjcMdoxJ3bYPdL6u0XcbM63t+m7dT2aYWK8rO0Bl/KI3ke7x7pZ6ac4zPJk2lJl0qwgSGAqqrJiC5DlgJHi+9XdY9Z/5lWUH3Se9x0am16/Nfe8ba4EaF23w4D2K8cZsd264gUPN0oI2O/SX5I97iHy1Ek2l6G9elkrjWSsxN3J3Mo76egJfvF5R3NnqiP2Um9QSusuPhlOobsxQzUmvAnH9em1phdsbZyGNs2uZAaASxP29HAejPRY250dIS0jKwRuvYfThMtt2mpi6dGfugvRqrxHTLsi5Sd57Cy/5m84VUzzHkzw9E80+IwZo+vgFDSAjoLNxm7UqO/+Pvr549F/9fu7qUrf9dpFr7QlSAdKr6avzuIoq+4Tc5/BDSc6vFsdPBcs9yDJmU4ZJjXNMYj2xqK9LF7JUXlb9B0I+MtoLySOMyqOCrpBTf+w+O+A+2BWEiEANMCMio6LUOWUfPAAA=">
+    </div>
+
+    <button onclick="toTop()" onload="alert('loaded')" id="back_to_top"
+        class="bg-[#d9d9d9] opacity-0 flex pr-2 py-1 sticky bottom-3 float-right align-middle items-center"><img
+            class="w-4 m-2" src="assets/arrow_up-a865f5e2.svg"> Back to top</button>
+
+
+    <div class="flex flex-wrap justify-center bg-[#f2f2f2] mt-24">
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> Software </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Windows
+                    Apps</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">AI</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">One
+                    Drive</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Outlook</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Skype</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">OneNote</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Teams</button>
+            </div>
+        </div>
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> PCs & Devices </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Shop
+                    Xbox</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Accessories</button>
+            </div>
+        </div>
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> Entertainment </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Xbox Game
+                    Pass Ultimate</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Xbox Live
+                    Gold</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Xbox
+                    Games</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">PC
+                    Games</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Windows
+                    digital games</button>
+            </div>
+        </div>
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> Business </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Cloud</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Security</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Azure</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Dynamic
+                    365</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    365 for business</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Industry</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Power Platform</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Window
+                    365</button>
+            </div>
+        </div>
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> Developer & IT </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Developer
+                    Center</button>
+                <button
+                    class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Documentation</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Learn</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Microsoft
+                    Tech Community</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Azure
+                    Marketplace</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">App
+                    Source</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Visual
+                    Studio</button>
+            </div>
+        </div>
+        <div class="w-[30%] my-10 text-sm min-[1080px]:w-[16%]">
+            <span class="header-2"> Other </span>
+            <div class="flex flex-col">
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Free
+                    downloads & security</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Education</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Gift
+                    Cards</button>
+                <button class="itm-2 focus:border focus:border-1 border-black focus:border-dashed">Licensing</button>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="border-b-2 border-black bg-[#e6e6e6] py-2 text-xs text-center items-center">
+        MADE BY:- HIMANSHU KAUSHIK</div>
+
+
+
+</body>
+
+</html>
